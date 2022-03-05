@@ -1,0 +1,39 @@
+body {
+  background: #050021;
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  color: #050021;
+  -webkit-text-stroke: 1px #36bf9c;
+  font-size: 5rem;
+}
+
+main {
+  color: #36bf9c;
+
+  .Collapsible__trigger {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+  
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.is-closed::after {
+      content: "+";
+    }
+
+    &.is-open::after {
+      content: "-";
+      font-size: 3rem;
+    }
+  }
+
+  .Collapsible__contentInner {
+    font-size: 1.5rem;
+  }
+}
